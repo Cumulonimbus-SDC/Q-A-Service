@@ -22,16 +22,3 @@ router.put("/answers/:aid/helpful", putControllers.putHelpfulA);
 router.put("/answers/:aid/report", putControllers.putReportA);
 
 module.exports = router;
-
-// router.get = (req, res) => {
-//   // res.send('TESTTTT');
-//   db.query('SELECT * FROM questions WHERE product_id = 4')
-//   .then((data) => {
-//     // console.log(data.rows);
-//     res.send(data.rows);
-//   })
-//   .catch((err) => {
-//     console.error(err);
-//     res.sendStatus(501);
-//   })
-// }
