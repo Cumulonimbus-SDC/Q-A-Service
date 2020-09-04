@@ -3,12 +3,6 @@ const { reads } = require("../models");
 module.exports.getQuestions = (req, res) => {
   req.query.page = req.query.page || 1;
   req.query.count = req.query.count || 5;
-  console.log(
-    "---Triggered getQuestions controller with pid, page & count of : ",
-    req.params.pid,
-    req.query.page,
-    req.query.count
-  );
   var responseObj = {
     product_id: req.params.pid,
     results: [],
@@ -76,12 +70,6 @@ module.exports.getQuestions = (req, res) => {
 module.exports.getAnswers = (req, res) => {
   req.query.page = req.query.page || 1;
   req.query.count = req.query.count || 5;
-  console.log(
-    "---Triggered getAnswers controller with qid, page & count of : ",
-    req.params.qid,
-    req.query.page,
-    req.query.count
-  );
   reads
     .readAnswers(req.params.qid, req.query.page, req.query.count)
     .then((data) => {

@@ -2,7 +2,6 @@ const db = require("../db");
 
 module.exports = {
   writeQuestion: function (body, name, email, pid) {
-    console.log("models.writeQuestion triggered");
     let fullDate = new Date();
     fullDate.setDate(fullDate.getDate() + 20);
     let formattedDateStr =
@@ -17,7 +16,6 @@ module.exports = {
     );
   },
   writeAnswer: function (qid, body, name, email) {
-    console.log("models.writeAnswer triggered");
     let fullDate = new Date();
     fullDate.setDate(fullDate.getDate() + 20);
     let formattedDateStr =
