@@ -86,7 +86,7 @@ Parameters
 
 | Parameter   | Type    | Description                                        |
 | ----------- | ------- | -------------------------------------------------- |
-| question_id | integer | Required ID of the question for wich answers are needed |
+| question_id | integer | Required ID of the question for which answers are needed |
 
 Query Parameters
 
